@@ -18,7 +18,7 @@ def welcome():
 
 @app.route('/likematch')
 def likematch():
-    return render_template('public/index.html')  # render a template
+    return render_template('index.html')  # render a template
 
 
 # start the server with the 'run()' method
