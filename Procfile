@@ -1,1 +1,1 @@
-web: gunicorn Marvel-Match-Devf:app
+web: gunicorn app:app
