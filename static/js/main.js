@@ -12,6 +12,29 @@ $(document).ready(function() {
             console.log(data.second.image);
             console.log(data.first.likes);
             console.log(data.second.likes);
+
+            if (voto()) {
+                data.first.likes++;
+                console.log(result);
+            }
+
         });
     }
+
+
+
 );
+
+function voto() {
+    let url = "https://match-start-server.herokuapp.com/next";
+    $.getJSON(url, data => {
+        $('#izquierda .likes').text(data.first.likes);
+
+        voto = data.first.likes;
+
+        console.log(voto);
+
+    });
+
+
+}

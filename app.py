@@ -16,7 +16,7 @@ def welcome():
     return render_template('welcome.html')  # render a template
 
 
-@app.route('/likematch')
+@app.route('/marvelmatch')
 def likematch():
     return render_template('index.html')  # render a template
 
